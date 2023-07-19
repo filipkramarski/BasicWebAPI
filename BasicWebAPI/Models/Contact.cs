@@ -11,10 +11,10 @@ namespace BasicWebAPI.Models
 
         [ForeignKey("Company")]
         public int CompanyId { get; set; }
-        public Company Company { get; set; }
 
         [ForeignKey("Country")]
         public int CountryId { get; set; }
+        public Company Company { get; set; }
         public Country Country { get; set; }
     }
 }
